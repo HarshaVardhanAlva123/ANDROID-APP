@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gowsik"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.gowsik.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.gowsik.Signup"
+            android:label="@string/title_activity_signup" >
+        </activity>
+        <activity
+            android:name="com.example.gowsik.AdminPage"
+            android:label="@string/title_activity_admin_page" >
+        </activity>
+        <activity
+            android:name="com.example.gowsik.UsersDetails"
+            android:label="@string/title_activity_users_details" >
+        </activity>
+        <activity
+            android:name="com.example.working.WorkingList"
+            android:label="WorkingList" >
+        </activity>
+        <activity
+            android:name="com.example.working.Toast_Notification"
+            android:label="Toast Notification" >
+        </activity>
+        <activity
+            android:name="com.example.working.RattingBars"
+            android:label="@string/title_activity_ratting_bars" >
+        </activity>
+        <activity
+            android:name="com.example.working.TimeAndDate"
+            android:label="@string/title_activity_time_and_date" >
+        </activity>
+        <activity
+            android:name="com.example.working.TextWatchers"
+            android:label="@string/title_activity_text_watcher" >
+        </activity>
+        <activity
+            android:name="com.example.working.Camera"
+            android:label="Camera" >
+        </activity>
+        <activity
+            android:name="com.example.working.MusicPlayer"
+            android:label="Music Player" >
+        </activity>
+        <activity
+            android:name="com.example.working.Bluetooth"
+            android:label="@string/title_activity_bluetooth" >
+        </activity>
+        <activity
+            android:name="com.example.working.Wifi"
+            android:label="Wifi" >
+        </activity>
+       
+    </application>
+
+</manifest>

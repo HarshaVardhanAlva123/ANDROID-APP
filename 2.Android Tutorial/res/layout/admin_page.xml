@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Admin Login"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/a_username"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="51dp"
+                android:background="@drawable/edit_text"
+                android:drawableRight="@drawable/ic_action_person"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Username"
+                android:textColor="#ff4000" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/a_password"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/edit_text"
+                android:drawableRight="@drawable/ic_action_secure"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#ff4000" />
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/a_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/a_password"
+                    android:background="@drawable/text_view"
+                    android:text="Clear fields"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ff6666" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/a_login"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/button"
+                android:text="Login"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
